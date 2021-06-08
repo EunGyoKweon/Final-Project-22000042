@@ -1,0 +1,139 @@
+{template: inc/header.html}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{text-align: center; color: white;}  
+        body{
+            background-color:rgb(255, 172, 172);
+        }
+    </style>
+</head>
+<body>
+	<br><br><br><br>
+	<h1>Complete the form and <span style="color: yellow;">click on </span>the "Order" button.</h1><hr>
+        <form> <!--form 사용-->
+            <p> <!--span태그로 앞에 번호들만 따로 색깔과 글자 사이즈 변경-->
+                <span style="color: yellow; font-size: 30px;">1. </span>Select Menu (You can select at least 0 to up to 5 menus per menu).<br>
+                <fieldset style="padding: 10px;"> <!--fieldset으로 장바구니 영역 나눔-->
+                    <legend style="color: black;"> A shopping basket </legend> <!--legend로 장바구니 이름 설정-->
+                    <input type="checkbox" value="Eco-Friendly Plastic Packaging"checked> Eco-Friendly Plastic Packaging </input>
+                    <select name="수량" style="color:black;">
+		    <option style="color:black;">0</option>
+                    <option style="color:black;">1</option>
+                    <option style="color:black;">2</option>
+                    <option style="color:black;">3</option>
+                    <option style="color:black;">4</option>
+                    <option style="color:black;">5</option>
+                    </select>
+                <br>
+                <input type="checkbox" value="Eco-Friendly Detergent"> Eco-Friendly Detergent </input>
+                    <select name="수량" style="color:black;">
+                    <option style="color:black;">0</option>
+		    <option style="color:black;">1</option>
+                    <option style="color:black;">2</option>
+                    <option style="color:black;">3</option>
+                    <option style="color:black;">4</option>
+                    <option style="color:black;">5</option>
+                    </select>
+                <br>
+                <input type="checkbox" value="Eco-Friendly Straw"> Eco-Friendly Straw </input>
+                    <select name="수량" style="color:black;">
+		    <option style="color:black;">0</option>
+                    <option style="color:black;">1</option>
+                    <option style="color:black;">2</option>
+                    <option style="color:black;">3</option>
+                    <option style="color:black;">4</option>
+                    <option style="color:black;">5</option>
+                    </select>
+                <br>
+                <input type="checkbox" value="Eco-Friendly Paper Cup"> Eco-Friendly Paper Cup</input>
+                    <select name="수량" style="color:black;">
+		    <option style="color:black;">0</option>
+                    <option style="color:black;">1</option>
+                    <option style="color:black;">2</option>
+                    <option style="color:black;">3</option>
+                    <option style="color:black;">4</option>
+                    <option style="color:black;">5</option>
+                    </select>
+                <br>
+                <input type="checkbox" value="Biodegradable Bamboo Toothbrush"> Biodegradable Bamboo Toothbrush</input>
+                    <select name="수량" style="color:black;">
+		    <option style="color:black;">0</option>
+                    <option style="color:black;">1</option>
+                    <option style="color:black;">2</option>
+                    <option style="color:black;">3</option>
+                    <option style="color:black;">4</option>
+                    <option style="color:black;">5</option>
+                    </select>
+             
+                
+                </fieldset>
+                
+            </p>
+            <hr>
+            <p>
+                <span style="color: yellow; font-size: 30px;">2. </span> Disposable (Let's start together to reduce disposable products for the environment!)<br><br>
+                <input type="radio" name="Disposable" value="whole" checked>
+                You don't need a disposable straw or fork. :)
+                <br>
+                <input type="radio" name="Disposable" value="ground">
+                Disposable straw and fork, please... :(
+                <br>
+            </p>
+            <br><hr>
+            <p>
+                <span style="color: yellow; font-size: 30px;">3. </span> Participate in review events<br>
+                <input type="checkbox" value="yes">
+                Yes.
+                <br>
+                <input type="checkbox" value="no">
+                No.
+            </p>
+            <br><hr>
+            <p>
+                <span style="color: yellow; font-size: 30px;">4. </span> Delivery date: <input type="date" name="date" style="color:black;">
+            </p>
+            <br><hr>
+            <p>
+                <span style="color: yellow; font-size: 30px;">5. </span> Etc.:<br>
+                <input type="checkbox" name="extras[]" value="giftwrap">
+                Gift wrapping
+                <br>
+                <input type="checkbox" name="extras[]" value="catalog" checked>
+                Earn Points
+            </p>
+            <br><hr>
+            <p>
+                <span style="color: yellow; font-size: 30px;">6. </span>Personal informations:<br>
+                Name:
+                <input type="text" name="name" value="" style="color:black;"><br>
+                Address:
+                <input type="text" name="address" value="" style="color:black;"><br>
+                Phone number:
+                <input type="text" name="phone" value="" style="color:black;"><br>
+            </p>
+            <br><hr>
+            <p>
+                <span style="color: yellow; font-size: 30px;">7. </span>Request (ex. Please deliver it quickly, please leave it at the door. and so on)<br>
+                <textarea name="comments" style="width:260px; height: 150px; color:black;"></textarea>
+            </p>
+            <br><hr>
+            <p>
+                <span style="color: yellow; font-size: 30px;">8. </span> Payment method:
+                <select name="money" style="color:black;">
+			<option value="휴대폰으로 카드결제" style="color:black;">Pay by credit card on mobile phone</option>
+                    <option value="무통장입금" style="color:black;"> Bank Transfer</option>
+                    <option value="만나서 현금결제" style="color:black;"> Meet and pay in cash</option>
+                    <option value="만나서 카드결제" style="color:black;"> Meet and pay by credit card</option>
+                </select>
+            </p>
+            <br><hr>
+	    <button onclick="alert(' Your order is complete! \n Thank you for using our shopping mall. \n Have a good day :)')" style="color:black;">Order</button>
+	   
+	   
+        </form>
+</body>
+{template: inc/footer.html}
+</html>
