@@ -27,7 +27,7 @@ You can contact me with the information on the introduction page(See number 5 on
 https://www.youtube.com/watch?v=3SZwCtT5Rvs
 
 
-<h2>6. Clearly indicate what your contribution to your project is. (This is very important.)</h2>
+<h2>6. Clearly indicate what your contribution to your project is.</h2>
 
 1. I implemented the "mail.html" part myself using html, css and JavaScript language.
    -> mail.html path: html/batflat/default
