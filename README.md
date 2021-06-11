@@ -24,6 +24,7 @@ And you can see various pages(introduction,products,other companies and ordering
 You can contact me with the information on the introduction page(See number 5 on the introduction page.), or please contact me via email at 22000042@handong.edu. :)
 
 <h2>5. Presentation Video (YouTube) Link</h2>
+https://www.youtube.com/watch?v=3SZwCtT5Rvs
 
 
 <h2>6. Clearly indicate what your contribution to your project is. (This is very important.)</h2>
